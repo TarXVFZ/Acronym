@@ -1,260 +1,151 @@
 * {
 	margin: 0;
-	font-family: Helvetica, Arial, sans-serif;
+
+	font-family: Tahoma, Arial, sans-serif;
 	box-sizing: border-box;
 }
 
-body {
-	margin-bottom: 200px;
-}
-
-.display-none {
-	box-shadow: 0 0 0 0 !important;
-}
-
-.container {
+.cc {
 	margin: 0 auto;
 
-	width: 1170px;
-
-	display: flex;
-	justify-content: space-between;
-}
-
-.container-fluid {
-	width: 100%;
-}
-
-.top-container {
-	min-height: 200px;
-}
-
-.menu-container {
-	margin-top: 30px;
-
-	min-height: 50px;
-	box-shadow: 0 0 0.5px 0;
-}
-
-.middle-container {
-	margin-top: 30px;
-}
-
-.middle-left, .middle-right {
-	min-height: 400px;
-	box-shadow: 0 0 .5px 0;
-}
-
-.middle-container .middle-left {
-	width: 750px;
-}
-
-.middle-container .middle-right {
-	width: 400px;
-}
-
-.fix-menu {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-
-	width: 100%;
-	min-height: 50px;
-	background: rgba(0,0,0, .8); /*хороший цвет!*/
-
-	z-index: 1;
-}
-
-.slider {
-	position: relative;
-
-	height:300px;
-	box-shadow: 0 0 1px 0;
-
-	overflow: hidden;
-}
-
-.sl-wrapper {
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 0;
-
-	width: 100%;
-	height: 100%;
-	border: 1px solid #000;
-}
-
-.slide {
-	width: 100%;
-    height: 100px;
-    float: left;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background: #ff0000;
-}
-
-.slide:last-child {
-	background: #0000ff;
-}
-
-.sl-left, .sl-right {
-	position: absolute;
-	top: 120px;
-	padding: 20px;
-
-	border-radius: 5px;
-	background: rgba(0, 200, 200, 1);
-
-	z-index: 1;
-
-	cursor: pointer;
-}
-
-.sl-left {
-	left: 20px;
-}
-.sl-right {
-	right: 20px;
-}
-
-.button {
-	color: #fff;
- 	text-decoration: none; /* убирать подчёркивание у ссылок */
-  	user-select: none; /* убирать выделение текста */
-  	padding: .7em 1.5em; /* отступ от текста */
-  	outline: none; /* убирать контур в Mozilla */
-  	border: none;
-
-  	cursor: pointer;
-}
-
-.button-red {
-	background: rgb(212,75,56);
-}
-.button-red:hover {
-	 background: rgb(232,95,76); 
-}
-.button-red:active {
-	 background: rgb(152,15,0);
-}
-
-.button-blue {
-	background: rgb(32,178,170);
-}
-.button-blue:hover {
-	 background: rgb(0,139,139); 
-}
-.button-blue:active {
-	 background: rgb(0,128,140);
-}
-
-.button-green {
-	background: rgb(34,169,34);
-}
-.button-green:hover {
-	 background: rgb(0,128,0); 
-}
-.button-green:active {
-	 background: rgb(0,100,0);
-}
-
-form .button, form input[type="submit"] {
-	margin: 0 auto;
-
-	width: 150px;
-
-	display: block;
-}
-
-
-.form-com {
-	margin: 15px auto;
-
-    width: 90%;
-    height: 34px;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-
-    display: block;
-}
-
-
-/*Сетки-----------------------------------*/
-
-.container > .row {
-	padding-right: 20px;
-
-	width: 100%;
-	box-shadow: 0 0 1px 0;
+	width: 1050px;
 
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: stretch;
-	/*flex-wrap: wrap;
-	align-content: stretch;*/
+	flex-wrap: nowrap;
 }
 
-.container > .row > .cm {
-	margin-left: 20px;
+.cp {
+	position: relative;
 
-	flex-grow: 1;
+	width: 100%;
+	box-shadow: 0 .2px 0 0;
 }
 
-.container > .row > .cm:nth-child(odd) {
-	background: #ff0000;
-}
-.container > .row > .cm:nth-child(even) {
-	background: #00ff00;
-}
+.cw {
+	width: 100%;
 
-.cm1	{flex-basis: 7.9%;}
-.cm2	{flex-basis: 9%;}
-.cm3	{flex-basis: 10%;}
-.cm4	{flex-basis: 10.9%;}
-.cm5	{flex-basis: 12%;}
-.cm6	{flex-basis: 14%;}
-.cm7	{flex-basis: 16%;}
-.cm8	{flex-basis: 19.5%;}
-.cm9	{flex-basis: 24.5%;}
-.cm10	{flex-basis: 33%;}
-.cm11	{flex-basis: 49.5%;}
-.cm12	{flex-basis: 99.5%;}
-
-
-/*Сетки - конец --------------------------*/
-
-
-@media only screen and (max-width: 1169px) {
-	.container { width: 950px; }
+	display: flex;
+	flex-direction: row;
+	justify-content: space-start;
+	flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 949px) {
-	.container { width: 750px; }
+/*MENU_L START*/
+
+.menu_l {
+	height: 100%;
 }
 
-@media only screen and (max-width: 750px) {
-	.container { width: 80%;}
+.menu_l > ul {
+	padding: 15px 0;
 
-	.container > .row { display: block; }
-	.container > .row > .cm {
-		margin: 10px 0;
-
-		width: 100%;
-
-		display: block;
-	}
+	height: 100%;
 }
+.menu_l > ul > li {
+	padding: 15px 5px;
+
+	height: 100% !important;
+
+	display: inline;
+
+	cursor: pointer;
+}
+
+.menu_l ul li {
+	list-style: none;
+}
+
+.menu_l  .menu_children {
+	position: absolute;
+	left: 50%;
+	margin-top: 15px;
+	margin-left: -495px;
+	padding: 20px 0;
+	padding-right: 30px;
+
+	background: #DCDCDC;
+	border-radius: 0 0 3px 3px;
+	font-size: 11pt;
+
+	display: none;
+	z-index: 1;
+}
+
+.menu_l .menu_children ul {
+	margin-top: 20px;
+	width: 130px;
+}
+
+.menu_l .menu_children ul li {
+	padding: 1px 5px;
+
+	text-align: center;
+
+	cursor: pointer;
+}
+
+.menu_l .menu_children ul name {
+	margin-left: 8px;
+	margin-bottom: 10px;
+	padding: 5px;
+
+	text-align: center;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+/*MENU_L STOP*/
+
+/*MENU_B START*/
+
+.menu_b {
+	position: relative;
+	margin: 5px;
+
+	height: 200px;
+	background: url(http://2017god.com/wp-content/uploads/2016/06/f1z.jpg) no-repeat;
+	background-size: cover;
+
+	display: block;
+}
+
+.menu_b span {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+
+	text-decoration: none;
+	font-size: 14px;
+	color: white;
+	text-shadow: 0 1px 5px #000;
+	word-wrap: break-word;
+
+	z-index: 1;
+}
+
+.menu_dark_fon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.1);
+}
+
+.menu_b:hover .menu_dark_fon {
+	background: rgba(0,0,0, 0);
+	transition: .2s;	
+}
+
+.menu_b:hover span {
+	color: rgba(255,255,255, .8);
+}
+
+
+/*MENU_B STOP*/
